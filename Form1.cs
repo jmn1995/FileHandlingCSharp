@@ -134,7 +134,7 @@ namespace FileHandlingProgram
         {
             ReadSpreadsheet tableCall = new ReadSpreadsheet();
 
-            List<ActivityModel> ListPath = tableCall.ReadExcelFile(@"C:\Users\jnicholson\Desktop\FileHandlingProgram\FileHandlingProgram\bin\Debug\WeeklySchedule");
+            List<ActivityModel> ListPath = tableCall.ReadExcelFile(@"C:\Users\FilePath\FileHandlingProgram\bin\Debug\WeeklySchedule");
             foreach (ActivityModel a in ListPath)
             {
                 string BlankName = a.ActivityName;
@@ -164,7 +164,7 @@ namespace FileHandlingProgram
             string fname = "";
             OpenFileDialog fdlg = new OpenFileDialog();
             fdlg.Title = "Excel File Dialog";
-            string ExcelFilePath = @"C: \Users\jnicholson\Desktop\FileHandlingProgram\FileHandlingProgram\bin\Debug\WeeklySchedule.xlsx";
+            string ExcelFilePath = @"C:\Users\FilePath\WeeklySchedule.xlsx";
             fdlg.InitialDirectory = new FileInfo(ExcelFilePath).DirectoryName;
             
             fdlg.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
